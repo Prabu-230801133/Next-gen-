@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .block1 {
+            border-style: dashed;
+            border-radius: 2mm;
+            margin-left: 2mm;
+            padding: 2mm;
+            background-color: rgb(39, 195, 21);
+        }
+
+        .inline {
+            background-color:antiquewhite;
+            display: inline;
+            border-style: dashed;
+            border-radius: 5mm;
+            margin-left: 2mm;
+            padding: 2mm;
+
+
+
+        }
+
+        .none {
+            display: none;
+        }
+
+        .block {
+            background-color: chocolate;
+            display: block;
+            border-style: dashed;
+            border-radius: 2mm;
+            margin-left: 2mm;
+            padding: 2mm;
+
+        }
+
+        .inlineblock {
+            display: inline-block;
+            border-style: dotted;
+            height: 120mm;
+            width: 50mm;
+            border-radius: 2mm;
+            margin-left: 2mm;
+            padding: 2mm;
+            background-color: rgb(31, 187, 227);
+
+
+        }
+        .flex-item{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns:auto auto auto;
+        }
+    </style>
+    <div class="flex-item">
+    <p class="block1">
+        1:Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus delectus dolores similique nulla fugit
+        optio accusamus id dignissimos ipsa quia, placeat ratione tempore obcaecati, aut est hic vitae at? Ducimus?
+    </p>
+    <p class="inline">
+        2:Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, amet eius vitae fuga quibusdam error quod
+        voluptates natus, neque quaerat facere unde ratione, illo provident ea culpa? Inventore, ipsam expedita.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, amet eius vitae fuga quibusdam error quod
+        voluptates natus, neque quaerat facere unde ratione, illo provident ea culpa? Inventore, ipsam expedita.
+    </p>
+    <!--p class="none">
+        3:Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, amet eius vitae fuga quibusdam error quod
+        voluptates natus, neque quaerat facere unde ratione, illo provident ea culpa? Inventore, ipsam expedita.
+    </p-->
+    <p class="block">
+        4:Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, amet eius vitae fuga quibusdam error quod
+        voluptates natus, neque quaerat facere unde ratione, illo provident ea culpa? Inventore, ipsam expedita.
+    </p>
+    <p class="inlineblock">
+        5:Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, amet eius vitae fuga quibusdam error quod
+        voluptates natus, neque quaerat facere unde ratione, illo provident ea culpa? Inventore, ipsam expedita.
+    </p>
+    </div>
+</body>
+
+</html>

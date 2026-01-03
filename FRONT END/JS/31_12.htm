@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="a">Prabu</h1>
+    <button onclick="f()" ondblclick="g()">change</button>
+
+    <script>
+        setTimeout( function f(){
+            document.getElementById("a").innerHTML="Hello World";
+            document.getElementById("a").style.color="red";
+            document.getElementById("a").style.fontSizeAdjust="50px";
+
+        },3000);
+        function g(){
+            document.getElementById("a").innerHTML="Double Clicked";
+            document.getElementById("a").style.color="blue";
+            document.getElementById("a").style.fontSizeAdjust="30px";
+        }
+        function h(){
+            document.getElementById("a").innerHTML="Mouse Left";
+            document.getElementById("a").style.color="green";
+            document.getElementById("a").style.fontSizeAdjust="20px";
+        }
+
+
+    </script>
+    
+</body>
+</html>

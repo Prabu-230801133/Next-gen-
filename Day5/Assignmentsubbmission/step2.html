@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Winter camp Registration - Step 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>WinterCamp Enrollment</h1>
+        <p class="tagline">Step 2: Learning and location details.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Step 1</li>
+            <li class="active">Step 2</li>
+            <li>Step 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+
+            <article>
+                <h2>Address & Learning Preferences</h2>
+                <p>Enter your Address and your preferences to learn.</p>
+
+                <form action="step3.html">
+
+                    <fieldset>
+                        <legend>Contact Address</legend>
+
+                        <label>Street:</label>
+                        <input id="street" type="text" name="street" required>
+
+                        <label>City:</label>
+                        <input id="city" type="text" name="city" required>
+
+                        <label>State:</label>
+                        <input id="state" type="text" name="state" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Learning Preferences</legend>
+
+                        <label>Preferred Track:</label>
+                        <select id="track" name="track">
+                            <option>Full Stack Web Development</option>
+                            <option>Data Science Basics</option>
+                            <option>Cloud & DevOps Intro</option>
+                        </select>
+
+                        <label>Mode of Learning:</label>
+                        <select id="mode" name="mode">
+                            <option>Online</option>
+                            <option>Offline</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </fieldset>
+
+                    <button type="submit">Next →</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tech Bootcamp Registration Portal</p>
+    </footer>
+</body>
+
+</html>

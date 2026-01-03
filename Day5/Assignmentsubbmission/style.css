@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;            /* Sets default font for the page */
+    background-color: #f3f7fb;                /* Light blue/grey background color */
+    margin: 0;                                /* Removes default outer margin */
+    padding: 0;                               /* Removes default body padding */
+    line-height: 1.6;                         /* Increases line spacing for readability */
+}
+
+/* Header area */
+header {
+    background: linear-gradient(90deg, #1dd67d, #00c6fb,#005bea); /* Gradient background for header */
+    padding: 20px;                                        /* Inner space around header content */
+    text-align: center;                                   /* Centers header text */
+    color: white;                                         /* Makes header text white */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);             /* Adds subtle shadow under header */
+}
+
+/* Small tagline under main heading */
+.tagline {
+    margin-top: 5px;                         /* Small space above the tagline */
+    font-size: 0.95rem;                      /* Slightly smaller font size */
+    letter-spacing: 0.5px;                   /* Adds tiny space between letters */
+}
+
+/* Navigation bar list container */
+nav ul {
+    display: flex;                           /* Places nav items in a row */
+    justify-content: center;                 /* Centers nav items horizontally */
+    background-color: #024b9b;               /* Solid blue background for nav bar */
+    padding: 10px;                           /* Inner space around nav items */
+    margin: 0;                               /* Removes default list margin */
+    gap: 15px;                               /* Space between each nav item */
+}
+
+/* Navigation list items */
+nav li {
+    list-style: none;                        /* Removes bullet points from list */
+    margin: 0 5px;                           /* Horizontal spacing between items */
+    padding: 6px 14px;                       /* Inner space for clickable area */
+    color: #eaf3ff;                          /* Light text color for nav items */
+    cursor: pointer;                         /* Shows pointer cursor on hover */
+    border-radius: 20px;                     /* Makes nav items pill-shaped */
+}
+
+/* Active step indicator */
+nav .active {
+    background-color: #ffffff;               /* White background for active step */
+    color: #024b9b;                          /* Blue text color for active step */
+    font-weight: bold;                       /* Makes active step text bold */
+    border-radius: 20px;                     /* Ensures pill shape for active step */
+}
+
+/* Main content wrapper */
+main {
+    display: flex;                           /* Allows horizontal layout for children */
+    justify-content: center;                 /* Centers the main content card */
+    margin-top: 20px;                        /* Adds space above main area */
+    padding: 10px;                           /* Inner padding around main content */
+}
+
+/* Card layout used in all steps */
+.card {
+    background-color: #ffffff;               /* White background for content card */
+    padding: 30px;                           /* Inner space inside the card */
+    width: 70%;                              /* Card occupies 70% of viewport width */
+    border-radius: 12px;                     /* Rounds the corners of the card */
+    display: flex;                           /* Places article and aside side by side */
+    gap: 30px;                               /* Space between article and aside */
+    border: 1px solid #d5e1f5;               /* Light border around the card */
+}
+
+/* Main article section */
+article {
+    flex: 2;                                 /* Article takes two-thirds of horizontal space */
+}
+/* All images inside the layout */
+img {
+    max-width: 100%;                         /* Prevents image from overflowing container */
+    border-radius: 8px;                      /* Rounds image corners slightly */
+    display: block;                          /* Removes inline spacing under images */
+}
+
+/* General form styling */
+form {
+    display: flex;                           /* Uses flexbox for vertical layout */
+    flex-direction: column;                  /* Stacks form elements vertically */
+    gap: 10px;                               /* Space between form controls */
+}
+
+/* Grouping form controls */
+fieldset {
+    border: 2px solid #005bea; 
+    display: inline-block;             /* Blue border around fieldset */
+    padding: 15px;                           /* Inner space inside fieldset */
+    margin-bottom: 20px;                     /* Space below each fieldset */
+    border-radius: 10px;                     /* Rounds the edges of the fieldset */
+}
+
+/* Legend heading inside fieldset */
+legend {
+    font-weight: bold;                       /* Makes legend text bold */
+    font-size: 1.05rem;                      /* Slightly larger font size for legend */
+}
+
+/* Labels above form fields */
+label {
+    font-weight: 600;                        /* Semi-bold text for labels */
+    margin-top: 5px;                         /* Space above label text */
+}
+
+/* Text inputs, dropdowns and textarea */
+input, select, textarea {
+    width:100%;                        /* Makes controls stretch to full width */
+    padding: 8px;                            /* Inner padding for comfortable typing */
+    margin: 6px 0 12px 0;                    /* Vertical spacing around controls */
+    border: 1px solid #b0b9d6;               /* Light blue-grey border */
+    border-radius: 6px;                      /* Smoothly rounded corners */
+    font-size: 0.95rem;                      /* Reasonable font size inside controls */
+}
+.ref{
+    display:inline; 
+    width:1cm;
+    transform:translateY(2px);
+}
+
+/* Focus state for form fields */
+input:focus, select:focus, textarea:focus {
+    outline: none;                           /* Removes default browser outline */
+    border-color: #005bea;                   /* Changes border to brighter blue */
+    box-shadow: 0 0 3px rgba(0, 91, 234, 0.6); /* Adds glow effect when focused */
+}
+
+/* Button styling */
+button {
+    background-color: #005bea;               /* Blue background for button */
+    color: white;                            /* White text on button */
+    border: none;                            /* Removes default button border */
+    padding: 12px 18px;                      /* Inner space for button text */
+    cursor: pointer;                         /* Pointer cursor on hover to show clickable */
+    border-radius: 6px;                      /* Rounded button corners */
+    font-size: 1rem;                         /* Regular font size for button text */
+    margin-top: 5px;                         /* Space above the button */
+    transition: background-color 0.2s ease,  /* Smooth change in background color */
+                transform 0.2s ease;         /* Smooth small movement on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0042b5;               /* Darker blue on hover */
+    transform: translateY(-2px);             /* Slight upward movement on hover */
+}
+
+/* Styled note text */
+.note {
+    margin-top: 10px;                        /* Space above note text */
+    color: #555;                             /* Medium grey text color */
+}
+
+/* Meter and progress bars */
+meter, progress {
+    width: 100%;                             /* Full width for bars */
+    margin: 6px 0 12px 0;                    /* Vertical space around bars */
+}
+
+/* Details box styling */
+details {
+    background-color: #eef4ff;               /* Very light blue background for details */
+    padding: 10px;                           /* Inner padding around details content */
+    border-radius: 8px;                      /* Rounded corners for details box */
+}
+
+/* Summary text styling */
+summary {
+    font-weight: 600;                        /* Semi-bold summary text */
+    cursor: pointer;                         /* Pointer cursor to indicate clickable area */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;                        /* Space above footer area */
+    background-color: #024b9b;               /* Solid blue footer background */
+    color: white;                            /* White text inside footer */
+    text-align: center;                      /* Centers footer text */
+    padding: 10px;                           /* Inner space inside footer */
+    font-size: 0.9rem;                       /* Slightly smaller footer text */
+}

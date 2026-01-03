@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Bootcamp Registration - Step 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>WinterCamp Enrollment</h1>
+        <p class="tagline">Start your career.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="active">Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <article>
+                <h2 style="margin-left: 35%;letter-spacing: 2mm;">Personal Information</h2>
+                <p style="margin-left: 40%;letter-spacing: 1mm;"> Share your basic details.</p>
+
+                <form action="step2.html" method="get">
+
+                    <fieldset>
+                        <legend>Profile Details</legend>
+
+                        <label for="name">*Full Name:</label>
+                        <input id="name" type="text" name="name" required>
+
+                        <label for="email">*Email:</label>
+                        <input id="email" type="email" name="email" required>
+
+                        <label for="phone">*Phone Number:</label>
+                        <input id="phone" type="tel" name="phone" required>
+
+                        <label for="gender">*Gender:</label>
+                        <select id="gender" name="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Prefer not to say</option>
+                            <option>Other</option>
+                        </select>
+
+                        <label for="bio">Short Introduction:</label>
+                        <textarea id="bio" name="bio" rows="3" placeholder="Tell us about your goals"></textarea>
+
+                        <small>Fields marked with * are mandatory.</small>
+                        <button type="submit">Next →</button>
+                    </fieldset>
+                </form>
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tech Bootcamp Registration Portal</p>
+    </footer>
+</body>
+
+</html>
