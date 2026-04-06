@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #c5dce6;
+    display: flex;  /*turns box into flex container*/
+    justify-content:center; /*centres content along main axis as main axis=horizontal in default row*/
+    align-items: center; /*aligns along cross axis =vertical*/
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: sans-serif;
+    background: linear-gradient(35deg,#f98d8d,#0077fe);
+}
+
+.container {
+    background-color: rgba(79, 215, 230, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;/*it's elements such as childs use this continer as refrence instead of the whole screen*/
+    padding: 2rem;
+    padding-bottom: 3rem;
+    text-align: center
+}
+h1{
+    padding: 2rem;    
+    font-weight: 600;
+    color: rgb(16, 105, 205);
+}
+/* h2{
+    left: 50%;
+    transform:translateX(-25%);
+} */
+.input-credentials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    left: 50%;
+    transform: translateX(13%);
+    padding-bottom: 1rem;
+    
+}
+.input-credentials h2 {
+  width: 150px; /* keeps alignment consistent */
+  font-size: 1.2rem;
+  margin: 0;
+  font-size: 25px;
+
+}
+.inputbox{
+    width: 15rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+}
+.inputbox:hover{
+    border-color: red;
+    border-width: 5px;
+}
+.inputbox:focus{
+    outline: none;
+    border: 5px solid red;
+}
+.input{
+    padding:2rem;
+}
+.submit-btn{
+    padding: 2vh;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 150px;
+    font-size: large;
+    background-color: rgba(79, 215, 230, 0.5);
+    transition: background-color 5s ease;
+    transition: transform 0.2s;
+}
+.submit-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: rgba(0,0,0,0.1);
+    box-shadow: 0 6px 10px rgba(102,126,234,0.3);
+    color: orange;
+    background-color:white ;
+    transition: background-color 5s ease;
+    transition: transform 0.2s;
+
+}
+.submit-btn:active{
+    transform: scale(0.9);
+}
+.signup{
+    padding-top: 2rem;
+}
+.link{
+    color: #b40000;
+    text-decoration: underline;
+    transition: all 0.15s ease;
+    display: inline-block;
+}
+.link:hover {
+    color: yellow;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transform: scale(1.1);
+}
+
+.link:active {
+    transform: scale(0.9);
+    color: white;
+    
+}

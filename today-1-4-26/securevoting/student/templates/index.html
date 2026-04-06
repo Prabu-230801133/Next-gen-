@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>LOGIN PAGE</h1>
+        <div class="input">
+        <div class="input-credentials">
+            <h2>Username :</h2>
+            <input class="inputbox" placeholder="USERNAME">
+        </div>
+        <div class="input-credentials">
+            <h2>Password :</h2>
+            <input class="inputbox" placeholder="PASSWORD">
+        </div>
+        </div>
+
+            <div class="submit">
+                <button class="submit-btn">LOGIN</button>
+            </div>
+        <div class="signup">
+            <label class="link">sign up!</label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
